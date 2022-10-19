@@ -25,6 +25,12 @@ main.container {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto;
 }
+footer.container {
+    width: 1366px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
 .left {
     float: left;
 }
@@ -35,6 +41,7 @@ main.container {
 .standfont {
     font-family: Helvetica;
     font-weight: 300;
+    z-index: 2;
 }
 .smallfont {
     font-size: 11px;
@@ -448,40 +455,183 @@ div#how-we-started {
     display: flex;
 }
 
-#scenery-side {
+#scenery-side, #who-we-side {
     width: 268px;
     height: 480px;
     background: #FAFAFA;
     display: flex;
 }
 
-div#overlay-scenery {
-    width: 540px;
-    height: 365px;
+.overlay {
     background: #ffffff;
     z-index: 2;
     position: absolute;
     display: inline-flex;
+   
+}
+div#overlay-scenery, div#overlay-who-we {
+    width: 540px;
+    height: 365px;
+}
+div#overlay-scenery {
     margin-left: -336px;
     margin-top: 57px;
 }
-div#overlay-scenery div > .h1 {
+
+div#overlay-scenery div > .h1,
+div#overlay-goals div > .h1,
+div#overlay-who-we div > .h1
+{
     padding-left: 48px;
     padding-top: 30px;
 }
-div#overlay-scenery div p {
+
+div#overlay-scenery div p,
+div#overlay-goals div p,
+div#overlay-who-we div p {
     margin-top: -5px;
     padding-left: 48px;
     color: #B6B6B6;
     line-height: 1.3;
 }
-div#overlay-scenery div {
+div#overlay-scenery div,
+div#overlay-goals div,
+div#overlay-who-we div {
     width: 484px;
 }
-div#overlay-scenery div button {
+
+div#overlay-scenery div button,
+div#overlay-goals div button,
+div#overlay-who-we div button {
     margin-left: 48px;
     border: 1px solid #0F2A59;
     width: 260px;
-    margin-top: 6px;
     color: #0F2A59;
+}
+div#overlay-scenery div button,
+div#overlay-who-we div button {
+    margin-top: 6px;
+}
+
+
+/* Our future goals  */
+#goals {
+    width: 368px;
+    height: 480px;
+    background: #FAFAFA;
+}
+
+#goals-side {
+    background-image: url('../images/our-goal-pic.png');
+    width: 800px;
+    height: 480px;
+}
+.left.goals {
+    padding-left: 91px;
+}
+div#overlay-goals {
+    width: 540px;
+    height: 384px;
+    margin-left: -304px;
+    margin-top: 47px;
+}
+div#overlay-goals div button {
+    margin-top: 8px;
+}
+
+
+/* Who we are? */
+.left.who-we {
+    margin-top: 47px;
+    margin-left: 91px;
+}
+#who-we {
+    width: 898px;
+    height: 480px;
+    background-image: url('../images/who-we-are-pic.png');
+    display: flex;
+    
+}
+div#overlay-who-we {
+    margin-left: -314px;
+    margin-top: 47px;
+}
+
+
+/* Footer  */
+
+#footer-contacts {
+    width: 1366px;
+    height: 478px;
+    background-color: #181818;
+    margin-top: 80px;
+}
+
+#footer-contacts > img {
+    width: 869px;
+    height: 342px;
+    position: absolute;
+    padding-left: 391px;
+    margin-top: -340px;
+}
+#our-contacts p {
+    color: white;
+    font-size: 24px;
+}
+#our-contacts ul li span {
+    color: white;
+    font-family: Helvetica;
+}
+
+#our-contacts ul#phone > li {
+    list-style: none;
+    margin-left: -22px;
+    margin-top: -22px;
+    line-height: 3.7;
+    font-size: 15px;
+}
+
+div#our-contacts {
+    margin-left: 91px;
+    padding-top: 33px;
+}
+
+
+.between-contacts {
+    width: 200px;
+    height: 1px;
+    background-color: #262626;
+    margin-top: -17px;
+}
+
+#our-contacts ul li > img {
+    margin-left: -17px;
+    padding-right: 17px;
+}
+#our-contacts#snss > li {
+    margin-top: 5px;
+}
+li.sns {
+    margin-left: -22px;
+    line-height: 2;
+    margin-top: 2px;
+}
+li.sns span {
+    font-size: 15px;
+}
+div.between-contacts:nth-child(2) {
+    margin-top: 10px;
+}
+
+ul#snss {
+    margin-bottom: 26px;
+}
+ul#address {
+    margin-left: -16px;
+    margin-top: 25px;
+}
+ul#address li {
+    font-size: 13.5px;
+    margin-top: -3px;
+    margin-left: -2px;
 }
