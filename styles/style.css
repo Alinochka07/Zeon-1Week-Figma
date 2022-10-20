@@ -1,7 +1,6 @@
 body {
     background-color: #E5E5E5;
     margin-top : 0;
-    /* width: 1366px; */
 }
 .my-grid {
     display: grid;
@@ -381,6 +380,13 @@ div#main-news {
     float: left;
     cursor: pointer;
 }
+div#main-news:hover,
+div.news:hover,
+div.news-below:hover {
+    background-color: black;
+    opacity: 60%;
+}
+
 .data {
     color: white;
     padding-top: 107px;
@@ -623,6 +629,9 @@ li.sns {
 li.sns span {
     font-size: 15px;
 }
+.sns:nth-child(1) span {
+    padding-left: 3px;
+}
 div.between-contacts:nth-child(2) {
     margin-top: 10px;
 }
@@ -630,6 +639,7 @@ div.between-contacts:nth-child(2) {
 ul#snss {
     margin-bottom: 26px;
 }
+
 ul#address {
     margin-left: -16px;
     margin-top: 25px;
