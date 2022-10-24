@@ -374,17 +374,18 @@ a.slide-next {
     margin-left: 1px;
 }
 
-
-.menu-box:nth-child(1) > .menu-icons {
+.menu-box > .menu-icons {
     float: right;
     display: inline-flex;
+}
+
+.menu-box:nth-child(1) > .menu-icons {
     margin-top: -59px;
     margin-right: 29px;
 }
 .menu-box:nth-child(2) > .menu-icons, .menu-box:nth-last-child(1) > .menu-icons {
-    position: absolute;
     margin-top: -80px;
-    margin-left: 251px;
+    margin-right: 7%;
 }
 
 /* Current news */
@@ -803,14 +804,11 @@ ul#address li {
         margin-top: -16%;
         margin-right: 7%;
     }
-    .menu-box:nth-child(2) > .menu-icons {
-        margin-top: -11%;
+    .menu-box:nth-child(2) > .menu-icons, .menu-box:nth-last-child(1) > .menu-icons {
+        margin-top: -19%;
         margin-left: 42%;
     }
-    .menu-box:nth-last-child(1) > .menu-icons {
-        margin-top: -8.5%;
-        margin-left: 42%;
-    }
+   
     #current-news {
         margin-top: 10%;
     }
@@ -874,13 +872,9 @@ ul#address li {
     div#overlay-goals {
         margin-top: 4.5%;
     }
-    .menu-box:nth-child(2) > .menu-icons {
-        margin-top: -12%;
+    .menu-box:nth-child(2) > .menu-icons, .menu-box:nth-last-child(1) > .menu-icons {
+        margin-top: -20%;
         margin-left: 48%;
-    }
-    .menu-box:nth-last-child(1) > .menu-icons {
-        margin-top: -11.5%;
-        margin-left: 46.2%;
     }
 }
 
@@ -890,7 +884,7 @@ ul#address li {
         margin-top: -9px;
     }
     .menu-box:nth-child(2) > .menu-icons {
-        margin-top: -13%;
+        margin-top: -19%;
         margin-left: 50%;
     }
     div#overlay-scenery, div#overlay-who-we {
@@ -902,7 +896,7 @@ ul#address li {
         height: max-content;
     }
     .menu-box:nth-last-child(1) > .menu-icons {
-        margin-top: -13%;
+        margin-top: -19%;
         margin-left: 49.2%;
     }
 }
@@ -985,12 +979,12 @@ ul#address li {
         margin-left: -4%;
     }
     .menu-box:nth-child(2) > .menu-icons {
-        margin-top: -32%;
+        margin-top: -41%;
         margin-left: 78%;
     }
     .menu-box:nth-last-child(1) > .menu-icons {
-        margin-top: -25%;
-        margin-left: 76.2%;
+        margin-top: -32%;
+        margin-left: 78%;
     }
     .menu-box.standfont > p {
         width: 55%;
@@ -1002,6 +996,7 @@ ul#address li {
     .menu-box:nth-child(1) > p:nth-child(1), .menu-box > h4 {
         font-size: 30px;
         padding-top: 4%;
+        padding-left: 5%;
     }
     .h1 {
         font-size: 36px;
@@ -1084,7 +1079,7 @@ ul#address li {
     .menu-box:nth-child(1) > p, .menu-box > p, div#overlay-scenery div p, 
     div#overlay-goals div p, div#overlay-who-we div p {
         font-size: 38px;
-        padding-left: 2%;
+        padding-left: 5%;
     }
 
     div#how-we-started {
@@ -1204,5 +1199,15 @@ ul#address li {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width:317px) {
+    div#overlay-scenery, div#overlay-who-we, div#overlay-goals {
+        width: 296%;
+        margin-top: 8%;
+    }
+    div#overlay-scenery, div#overlay-who-we {
+        margin-left: -327%;
     }
 }
