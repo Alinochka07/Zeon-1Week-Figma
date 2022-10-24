@@ -1126,7 +1126,7 @@ ul#address li {
         font-size: 32px;
     }
     div#our-future-goals {
-        margin-bottom: 1%;
+        margin-bottom: 5%;
         margin-top: -6%;
     }
     div#overlay-goals {
@@ -1189,10 +1189,10 @@ ul#address li {
         margin-left: -5%;
     }
 }
-@media (max-width:340px) {
+@media (max-width:339px) {
     .my-grid {
         display: flex;
-        max-width: 340px;
+        min-width: 100%;
         flex-wrap: wrap;
     }
     .container {
@@ -1200,6 +1200,17 @@ ul#address li {
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .slider-container {
+        width: 99%;
+        height: 100%;
+    }
+    .menu-box {
+        height: 400px;
+    }
+    div#who-we-are {
+        margin-bottom: 6%;
+    }
+
 }
 
 @media (max-width:317px) {
@@ -1209,5 +1220,91 @@ ul#address li {
     }
     div#overlay-scenery, div#overlay-who-we {
         margin-left: -327%;
+    }
+}
+
+@media (max-width: 280px) {
+    .container {
+        width: auto;
+    }
+    div.top-header {
+        display: flex;
+        position: absolute;
+        width: 1112px;
+        height: 64px;
+        background: #FFFFFF;
+    }
+    
+    .menu-box:nth-child(1) > .menu-icons {
+        margin-top: -30%;
+        margin-right: 7%;
+    }
+    .menu {
+        margin-left: -11%;
+    }
+    .language {
+        padding-left: 579px;
+    }
+
+    .slider-container {
+        margin-top: 5%;
+        width: 82%;
+        height: 100%;
+    }
+
+    .under-slider-menu {
+        width: 80%;
+    }
+    .menu-box:nth-child(1) {
+        height: 365px;
+    }
+    div#news-row {
+        width: 82%;
+    }
+    div.news.right, div.news-below.right {
+        margin-right: -2%;
+    }
+    .left.scenery, .left.goals, .left.who-we {
+        padding-left: 6.7%;
+        padding-top: 4%;
+        width: 75%;
+        height: auto;
+    }
+    div#how-we-started {
+        margin-top: 25%;
+        margin-bottom: 17%;
+    }
+    div#our-future-goals {
+        margin-bottom: 5%;
+        margin-top: -6%;
+    }
+    div#overlay-scenery, div#overlay-who-we {
+        margin-left: -317%;
+    }
+    div#overlay-scenery, div#overlay-who-we {
+        margin-left: -317%;
+        margin-top: 16%;
+    }
+    div#overlay-scenery, div#overlay-who-we, div#overlay-goals {
+        margin-top: 18%;
+    }
+    #who-we {
+        width: 92%;
+        height: 675px;
+        background-size: 100% 120%;
+    }
+    
+    #current-news {
+        margin-bottom: 57%;
+    }
+    .footer-contacts {
+        width: 1112px;
+    }
+
+    .footer-contacts > img {
+        width: 236%;
+        height: auto;
+        padding-left: 133%;
+        margin-top: -116%;
     }
 }
